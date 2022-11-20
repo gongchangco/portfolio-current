@@ -1,0 +1,60 @@
+---
+export interface Props {
+	title: string;
+	name: string;
+	body: string;
+}
+
+const { title, name, body } = Astro.props;
+---
+
+<section class="home-section active">
+	<header>
+		<h1 class="text-8xl mb-5 squiggles">{title}</h1>
+		<hr/>
+		<h2 class="text-3xl mb-5">{name}</h2>
+		<h3 class="text-xl">{body}</h3>
+	</header>
+</section>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="squiggly-filters">
+	<defs>
+		<filter id="squiggly-0">
+			<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+			<feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+		</filter>
+
+		<filter id="squiggly-1">
+			<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+		</filter>
+
+		<filter id="squiggly-2">
+			<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+		</filter>
+
+		<filter id="squiggly-3">
+			<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+		</filter>
+
+		<filter id="squiggly-4">
+			<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+		</filter>
+	</defs>
+</svg>
+
+<style>
+	h1, h3 {
+		font-family: 'Coming Soon', cursive;
+	}
+
+	.home-section {
+		height: 100vh;
+		padding: 0 150px;
+		transition: 1s;
+		@apply w-full flex items-center fixed top-0 opacity-0;
+	}
+</style>

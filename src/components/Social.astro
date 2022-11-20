@@ -1,0 +1,11 @@
+---
+const { platform, username, domain, extra, icon } = Astro.props;
+---
+
+<a href={`https://www.${platform}.${domain}/${extra}${username}`}><i class={`${icon}`}></i></a>
+
+<style>
+    i:hover {
+        animation: squiggly-anim 0.4s linear infinite;
+    }
+</style>

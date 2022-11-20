@@ -1,0 +1,22 @@
+---
+import Social from './Social.astro';
+
+---
+
+
+<footer class="flex flex-row wrap justify-between items-start bg-slate-500 text-center mt-auto p-2">
+    <div class="text-white">
+        <p class="text-base">Copyright <span class="text-2xl">©</span>
+            <script type="text/javascript">
+                let date = new Date().getFullYear();
+                document.write(date);
+            </script>
+
+        </p>
+    </div>
+    <div id="socials" class="text-white text-2xl">
+        <Social platform="linkedin" extra="/in/" username="graceongchangco" icon="bx bxl-linkedin-square" domain="com" />
+        <Social platform="github" extra="" username="gongchangco" icon="bx bxl-github" domain="com" />
+        <Social platform="codepen" extra="" username="gongchangco" icon="bx bxl-codepen" domain="io" />
+    </div>
+</footer>

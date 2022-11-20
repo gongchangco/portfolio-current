@@ -1,0 +1,35 @@
+---
+
+---
+
+<nav class="w-full fixed top-0 left-0 flex justify-evenly items-center z-10 bg-slate-700">
+    <ul class="list-none flex text-xl font-bold">
+        <li class="link active"><a href="#"><i class='bx bxs-home'></i> Home.</a></li>
+        <li class="link"><a href="#"><i class='bx bxs-folder'></i> Projects.</a></li>
+        <li class="link"><a href="#"><i class='bx bxs-user-rectangle'></i> About.</a></li>
+        <li class="link"><a href="#"><i class='bx bxs-envelope' ></i> Contact.</a></li>
+    </ul>
+</nav>
+
+<style>
+    li {
+        font-family: 'Coming Soon', cursive;
+        letter-spacing: 1.42px;
+    }
+
+    .link a:hover {
+        animation: squiggly-anim 0.4s linear infinite;
+        @apply opacity-100;
+    }
+
+    .link a {
+        padding: 10px 30px;
+        margin: 0 20px;
+        transition: .5s;
+        @apply text-neutral-50 opacity-50 no-underline leading-10;
+    }
+
+    .link.active a {
+        @apply opacity-100;
+    }    
+</style>

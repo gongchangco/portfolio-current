@@ -8,4 +8,12 @@ const { platform, username, domain, extra, icon } = Astro.props;
     i:hover {
         animation: squiggly-anim 0.4s linear infinite;
     }
+
+    a {
+        @apply bottom-0 text-2xl;
+    }
+
+    a:hover {
+        @apply text-slate-400;
+    }
 </style>

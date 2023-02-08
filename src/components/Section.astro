@@ -1,0 +1,13 @@
+---
+const { name } = Astro.props;
+---
+
+<section id={`${name}`}>    
+    <slot />
+</section>
+
+<style>
+    section {
+        @apply text-gray-700;
+    }
+</style>

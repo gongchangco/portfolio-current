@@ -1,35 +1,52 @@
----
+<header class="nav-header">
+    <div class="nav-container">
+        <a class="nav-title" href="/" target="_blank">
+            <span>Domigraphics.</span>
+        </a>
 
----
+        <nav>
+            <a href="/"><i class='bx bx-home'></i> Home</a>
+            <a href="#projects"><i class='bx bx-folder'></i> Projects</a>
+            <a href="#about"><i class='bx bx-user'></i> About</a>
+	        <a href="#contact"><i class='bx bx-envelope'></i> Contact</a>
+        </nav>
+    </div>
+</header>
 
-<nav class="w-full fixed top-0 left-0 flex justify-evenly items-center z-10 bg-slate-700">
-    <ul class="list-none flex text-xl font-bold">
-        <li class="link active"><a href="#"><i class='bx bxs-home'></i> Home.</a></li>
-        <li class="link"><a href="#"><i class='bx bxs-folder'></i> Projects.</a></li>
-        <li class="link"><a href="#"><i class='bx bxs-user-rectangle'></i> About.</a></li>
-        <li class="link"><a href="#"><i class='bx bxs-envelope' ></i> Contact.</a></li>
-    </ul>
-</nav>
+
+<!--  
+<header>
+
+    <div class="socials">
+        <Social platform="github" domain="com" extra="" username="gongchangco" icon="bx bxl-github" />
+        <Social platform="codepen" domain="io" extra="" username="gongchangco" icon="bx bxl-codepen" />
+        <Social platform="linkedin" domain="com" extra="in/" username="graceongchangco" icon="bx bxl-linkedin-square" />
+    </div>
+</header>
+-->
 
 <style>
-    li {
-        font-family: 'Coming Soon', cursive;
-        letter-spacing: 1.42px;
+    .nav-header {
+        @apply text-slate-300;
     }
 
-    .link a:hover {
-        animation: squiggly-anim 0.4s linear infinite;
-        @apply opacity-100;
+    .nav-container {
+        @apply container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center;
     }
 
-    .link a {
-        padding: 10px 30px;
-        margin: 0 20px;
-        transition: .5s;
-        @apply text-neutral-50 opacity-50 no-underline leading-10;
+    .nav-container nav {
+        @apply md:ml-auto flex flex-wrap items-center text-base justify-center;
     }
 
-    .link.active a {
-        @apply opacity-100;
-    }    
+    .nav-container nav a {
+        @apply mr-5 hover:text-teal-300;
+    }
+
+    .nav-title {
+        @apply flex font-medium items-center text-gray-300 mb-4 md:mb-0;
+    }
+
+    .nav-title span {
+        @apply ml-3 text-xl;
+    }
 </style>

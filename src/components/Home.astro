@@ -8,14 +8,13 @@ export interface Props {
 const { title, name, body } = Astro.props;
 ---
 
-<section class="home-section active">
-	<header>
-		<h1 class="text-8xl mb-5 squiggles">{title}</h1>
-		<hr/>
-		<h2 class="text-3xl mb-5">{name}</h2>
-		<h3 class="text-xl">{body}</h3>
-	</header>
-</section>
+
+<header>
+	<h1 class="squiggles">{title}</h1><hr/>
+	<h2 class="text-3xl mt-5 mb-5">{name}</h2>
+	<h3 class="text-xl">{body}</h3>
+</header>
+
 
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="squiggly-filters">
 	<defs>
@@ -47,14 +46,12 @@ const { title, name, body } = Astro.props;
 </svg>
 
 <style>
-	h1, h3 {
+	header h1, header h3 {
 		font-family: 'Coming Soon', cursive;
+		@apply text-white;
 	}
 
-	.home-section {
-		height: 100vh;
-		padding: 0 150px;
-		transition: 1s;
-		@apply w-full flex items-center fixed top-0 opacity-0;
+	header h1 {
+		@apply text-white text-8xl font-light;
 	}
 </style>

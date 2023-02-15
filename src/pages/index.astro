@@ -89,22 +89,22 @@ import Card from '../components/Card.astro';
 						</div>
 
 						<div class="divide-y divide-gray-200">
-							<form class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+							<form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 								<input class="hidden" name="bot-field">
-								<label class="contact-label" for="grid-first-name">
+								<label class="contact-label" for="grid-name">
 									Name <span class="text-red-500">*</span>
 								</label>
-								<input required class="contact-input" id="grid-first-name" type="text">
+								<input required class="contact-input" name="name" id="grid-name" type="text">
 
-								<label class="contact-label" for="grid-first-name">
+								<label class="contact-label" for="grid-email">
 									Email <span class="text-red-500">*</span>
 								</label>
-								<input required class="contact-input" id="grid-first-name" type="email">
+								<input required class="contact-input" name="email" id="grid-email" type="email">
 
-								<label class="contact-label" for="grid-first-name">
+								<label class="contact-label" for="grid-message">
 									Message <span class="text-red-500">*</span>
 								</label>
-								<textarea required class="contact-message" placeholder="Your message..."></textarea>
+								<textarea required class="contact-message" name="message" placeholder="Your message..."></textarea>
 
 								<div class="flex items-end justify-end">
 									<button class="contact-button" type="submit">Send</button>

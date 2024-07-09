@@ -18,7 +18,7 @@ export default function Projects() {
                 What I&apos;ve worked on:
             </Heading>
             
-            <p className="text-base font-mono mb-10">All the projects that I have worked on.</p>
+            <p className="text-base font-mono mb-10">Below are the list of projects I&apos;ve worked on both work-related and non-work related.</p>
 
             <Products />
         </Container>

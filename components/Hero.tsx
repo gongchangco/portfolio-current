@@ -9,12 +9,12 @@ const Hero = () => {
         <div className="flex relative z-10">
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col">
                 <TextGenerateEffect
-                    words="👋 Hello there! I'm Grace."
+                    words="👋 Welcome to Domigraphics"
                     className="md:text-5xl lg:text-6xl"
                 />
 
                 <p className="text-sm lg:text-base font-normal text-secondary max-w-xl mt-4">
-                    I&apos;m a software developer that loves automation and build web applications that can impact user experience.
+                    As a software developer I love automation and building web applications that can impact user experience.
                 </p>
 
                 <Heading

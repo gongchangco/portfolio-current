@@ -7,17 +7,12 @@ export default function About() {
         <div>
             <div className="max-w-4xl">
                 <p className="mt-4">
-                    Hey there, I&apos;m Grace Ongchangco - a software developer specializing in building web applications 
+                     My name is Grace Ongchangco - a software developer specializing in building web applications 
                     and implementing automation solutions. 
                 </p>
                 <p className="mt-4">
-                    Since the early days of my journey, I was deeply passionate about art and initially thought of becoming an artist. However, my parents disagreed with this path, 
-                    leading me to rethink my career strategy. I wondered, &quot;How can I pursue a career that allows me to unleash my creativity?&quot; Realizing my love for computers, I decided
-                    to embark on a computer-related career. Thus began my transformation into a developer, where I could blend my creative instincts with technical skills.
-                </p>
-                <p className="mt-4">
-                    My journey as a software developer has been marked by a progressive deepening of my skills in automation, full-stack development, and project management. This journey has been
-                    driven by a strong focus on enhancing operational efficiency and reducing manual processes. I’ve had the privilege of working across various industries, developing robust 
+                    As a software developer, my journey has been marked by a progressive deepening of my skills in automation, full-stack development, and project management. This journey has been
+                    driven by a strong focus on enhancing operational efficiency and reducing manual processes. I&apos;ve had the privilege of working across various industries, developing robust 
                     solutions that streamline workflows and improve system integrations.
                 </p>
                 <p className="mt-4">

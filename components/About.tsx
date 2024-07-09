@@ -12,7 +12,7 @@ export default function About() {
                 </p>
                 <p className="mt-4">
                     Since the early days of my journey, I was deeply passionate about art and initially thought of becoming an artist. However, my parents disagreed with this path, 
-                    leading me to rethink my career strategy. I wondered, "How can I pursue a career that allows me to unleash my creativity?" Realizing my love for computers, I decided
+                    leading me to rethink my career strategy. I wondered, &quot;How can I pursue a career that allows me to unleash my creativity?&quot; Realizing my love for computers, I decided
                     to embark on a computer-related career. Thus began my transformation into a developer, where I could blend my creative instincts with technical skills.
                 </p>
                 <p className="mt-4">
@@ -30,11 +30,11 @@ export default function About() {
                     ensures that I stay at the forefront of technological advancements, bringing fresh perspectives and cutting-edge solutions to every project.
                 </p>
                 <p className="mt-4">
-                    Through this website, I aim to share my insights, experience, and creations with you. Whether you're a fellow developer seeking solutions,
-                    a fellow artist in search of inspiration, or simply someone who wants to know more about me, there's something here for you.
+                    Through this website, I aim to share my insights, experience, and creations with you. Whether you&apos;re a fellow developer seeking solutions,
+                    a fellow artist in search of inspiration, or simply someone who wants to know more about me, there&apos;s something here for you.
                 </p>
                 <p className="mt-4">
-                    Thank you for being here, and I can't wait to embark this adventure with you.
+                    Thank you for being here, and I can&apos;t wait to embark this adventure with you.
                 </p>
             </div>
         </div>

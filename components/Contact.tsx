@@ -20,6 +20,7 @@ export const Contact = () => {
     const [formData, setFormData] = useState(defaultFormState);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitError, setSubmitError] = useState("");
+    const [submitSuccess, setSubmitSuccess] = useState(false);
 
     const validateForm = () => {
         let isValid = true;
@@ -54,19 +55,20 @@ export const Contact = () => {
 
         setIsSubmitting(true);
         setSubmitError("");
+        setSubmitSuccess(false);
 
-        const formElement = e.target as HTMLFormElement;
+        const form = e.target as HTMLFormElement;
 
         try {
             const response = await fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(new FormData(formElement) as any).toString(),
+                body: new URLSearchParams(new FormData(form) as any).toString(),
             });
 
-            if (response.status === 200) {
+            if (response.ok) {
                 setFormData(defaultFormState);
-                alert("Form submitted successfully!");
+                setSubmitSuccess(true);
             } else {
                 throw new Error("Form submission failed");
             }
@@ -81,7 +83,6 @@ export const Contact = () => {
         <form
             name="contact"
             method="POST"
-            action="/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}

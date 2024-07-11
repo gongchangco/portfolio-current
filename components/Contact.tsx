@@ -64,7 +64,7 @@ export const Contact = () => {
                 body: new URLSearchParams(new FormData(formElement) as any).toString(),
             });
 
-            if (response.ok) {
+            if (response.status === 200) {
                 setFormData(defaultFormState);
                 alert("Form submitted successfully!");
             } else {
@@ -78,8 +78,18 @@ export const Contact = () => {
     }
 
     return (
-        <form name="contact" method="POST" data-netlify="true" className="form" onSubmit={handleSubmit}>
+        <form
+            name="contact"
+            method="POST"
+            action="/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+        >
             <input type="hidden" name="form-name" value="contact" />
+            <label className="hidden">
+                Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
+            </label>
 
             <div className="flex flex-col md:flex-row justify-between gap-5">
                 <input 

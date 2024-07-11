@@ -61,5 +61,5 @@ export const products = [
                 </p>
             </div>
         )
-    }
+    }, 
 ]

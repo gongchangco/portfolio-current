@@ -7,8 +7,7 @@ export default function About() {
         <div>
             <div className="max-w-4xl">
                 <p className="mt-4">
-                     My name is Grace Ongchangco - a software developer specializing in building web applications 
-                    and implementing automation solutions. 
+                    My name is Grace Ongchangco - a software developer specializing in building web applications, ERP development, and implementing automation solutions. 
                 </p>
                 <p className="mt-4">
                     As a software developer, my journey has been marked by a progressive deepening of my skills in automation, full-stack development, and project management. This journey has been
@@ -16,8 +15,8 @@ export default function About() {
                     solutions that streamline workflows and improve system integrations.
                 </p>
                 <p className="mt-4">
-                    I continue to develop my skills as I incorporate the latest advancements in technology, eager to contribute to a forward-thinking team and leverage 
-                    emerging trends to optimize productivity.
+                    My skills continue to develop as I incorporate the latest advancements in technology, eager to contribute to a forward-thinking team and leverage emerging 
+                    trends to optimize productivity.
                 </p>
                 <p className="mt-4">
                     What sets me apart is my unique ability to merge creativity with technical expertise. My artistic background fuels my innovative approach to problem-solving,

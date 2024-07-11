@@ -21,7 +21,7 @@ export const Sidebar = () => {
                         animate={{ x: 0 }}
                         transition={{ duration: 0.2, ease: "linear" }}
                         exit={{ x: -200 }}
-                        className='px-8 z-[100] py-10 lg:relative h-screen left-0 flex flex-col justify-between'
+                        className='px-3 sm:px-8 z-[100] py-10 lg:relative h-screen left-0 flex flex-col justify-between'
                     >
                         <div className=''>
                             <SidebarHeader />
@@ -78,7 +78,7 @@ export const Navigation = () => {
 
 const SidebarHeader = () => {
     return(
-        <div className="flex space-x-2">
+        <div className="flex gap-2 justify-center sm:justify-start">
             <Image
                 src="/favicon.ico"
                 alt="Image"

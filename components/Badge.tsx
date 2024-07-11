@@ -12,10 +12,10 @@ export const Badge = ({
     return (
         <Link
             href={href}
-            className="p-[3px] relative"
+            className="p-[3px] relative inline-block"
         >
             <div className="absolute inset-0 bg-gradient-to-r from-slate-500 to-stone-500 rounded-lg" />
-            <div className="px-4 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent flex justify-center items-center gap-3">
+            <div className="px-2 sm:px-4 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent flex justify-center items-center gap-3">
                 <IconFileInfo size={18} />
                 <span className="text-base">{text}</span>
             </div>

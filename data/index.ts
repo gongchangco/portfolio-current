@@ -14,9 +14,10 @@ export const timeline = [
         date: "04/2023 - 02/2024",
         description: "Product GUI and building internal systems",
         responsibilities: [
-            "Develop an ERP system that improves work efficiency and enhance inventory management",
+            "Developed and refined automation solutions for internal applications, enhancing workflow efficiency and facilitating smooth transitions to new projects.",
+            "Utilized the PEVN (PostgreSQL, Express, Vue, Node) tech stack to construct robust web applications, including an ERP system optimized for inventory management.",
             "Collaborate with internal stakeholders to devise and enhabce web applications aimed at improving operational efficiency",
-            "Enhance existing projects",
+            "Led initiatives to enhance and automate existing projects using PHP and Angular.",
             "Participated in Agile/Scrum development methodologies, collaborating with cross-functional teams"
         ]
     },

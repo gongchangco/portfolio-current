@@ -21,7 +21,7 @@ const Hero = () => {
                     as="h2"
                     className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
                 >
-                    What I&apos;ve been worked on:
+                    What I&apos;ve worked on:
                 </Heading>
                 <Products />
             </div>

@@ -13,11 +13,8 @@ export const products = [
         content: (
             <div>
                 <p>
-                    Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-                    dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-                    cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-                    cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-                    non cupidatat duis esse velit ut culpa et.{" "}
+                    A simple Python script that sends invoice order information to multiple emails
+                    from an .xlsx file.
                 </p>
             </div>
         ),
@@ -33,11 +30,8 @@ export const products = [
         content: (
             <div>
                 <p>
-                    Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-                    dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-                    cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-                    cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-                    non cupidatat duis esse velit ut culpa et.{" "}
+                    This is a skeleton template for automating and managing WooCommerce orders 
+                    that are processing orders.{" "}
                 </p>
             </div>
         )
@@ -45,7 +39,7 @@ export const products = [
     {
         href: "https://github.com/gongchangco/Spotify-Playlist-Backup-Service",
         title: "Spotify Playlist Backup Service",
-        description: "This project is a web application that allows users to backup their Spotify playlists. The project focuses on using Spotify's API to interact with Spotify service to build a client that can download a user's playlist data into a CSV file.",
+        description: "This project is a web application that allows users to backup their Spotify playlists.",
         thumbnail: "/images/spotify-playlist-backup-service.png",
         images: ["/images/spotify-playlist-backup-service.png", "/images/spotify-playlist-backup-service-2.png"],
         stack: ["NextJS", "TypeScript", "NodeJS", "Coding Challenge"],
@@ -53,11 +47,12 @@ export const products = [
         content: (
             <div>
                 <p>
-                    Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-                    dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-                    cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-                    cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-                    non cupidatat duis esse velit ut culpa et.{" "}
+                    This project is part of John Crickett's Coding challenges.{" "}
+                </p>
+                <p>
+                    It is a web application that allows users to backup their Spotify playlists.
+                    The web application focuses on using Spotify's API to interact with Spotify 
+                    service to build a client that can download a user's playlist data into a CSV file.
                 </p>
             </div>
         )

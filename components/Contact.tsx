@@ -17,7 +17,6 @@ const defaultFormState = {
 }
 
 export const Contact = () => {
-    const [formData, setFormData] = useState(defaultFormState);
     const [submitSuccess, setSubmitSuccess] = useState(false);
 
     useEffect(() => {
@@ -27,50 +26,59 @@ export const Contact = () => {
     }, []);
 
     return (
-        <form
-            name="contact"
-            method="POST"
-            action="/?success=true"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-        >
-            <input type="hidden" name="form-name" value="contact" />
-            <label className="hidden">
-                Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
-            </label>
+        <div>
+            {submitSuccess && (
+                <p className="text-green-400">
+                    Successfully submitted form.
+                </p>
+            )}
 
-            <div className="flex flex-col md:flex-row justify-between gap-5">
-
-                <input 
-                    type="text"
-                    placeholder="Name"
-                    className="bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
-                    value={formData.name.value}
-                />
-
-                <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
-                    value={formData.email.value}
-                />
-            </div>
-
-            <div>
-                <textarea
-                    placeholder="Message"
-                    rows={10}
-                    className="bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
-                    value={formData.message.value}
-                />
-            </div>
-
-            <button
-                className="w-full px-2 py-2 mt-4 bg-neutral-300 rounded-md font-bold text-neutral-600"
-                type="submit"
+            <form
+                name="contact"
+                method="POST"
+                action="/?success=true"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
             >
-                Submit
-            </button>
-        </form>
+                <input type="hidden" name="form-name" value="contact" />
+                <label className="hidden">
+                    Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
+                </label>
+
+                <div className="flex flex-col md:flex-row justify-between gap-5">
+
+                    <input 
+                        type="text"
+                        placeholder="Name"
+                        className="bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+                        name="name"
+                    />
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        className="bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+                        name="email"
+                    />
+                </div>
+
+                <div>
+                    <textarea
+                        placeholder="Message"
+                        rows={10}
+                        className="bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
+                        name="message"
+                    />
+                </div>
+
+                <button
+                    className="w-full px-2 py-2 mt-4 bg-neutral-300 rounded-md font-bold text-neutral-600"
+                    type="submit"
+                >
+                    Submit
+                </button>
+            </form>
+        </div>
+
     )
 }

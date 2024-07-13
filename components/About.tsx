@@ -19,16 +19,16 @@ export default function About() {
                     trends to optimize productivity.
                 </p>
                 <p className="mt-4">
-                    What sets me apart is my unique ability to merge creativity with technical expertise. My artistic background fuels my innovative approach to problem-solving,
-                    allowing me to think outside the box and develop solutions that are not only functional but also aesthetically pleasing. My commitment to continuous learning 
-                    ensures that I stay at the forefront of technological advancements, bringing fresh perspectives and cutting-edge solutions to every project.
+                    What makes me unique is the ability to merge creativity with technical expertise. The artistic background combined with frontend/backend skills fuels my innovative approach
+                    to problem-solving, allowing me to think outside the box and develop solutions that are not only functional but also aesthetically pleasing. My commitment to continous learning
+                    ensures that I stay at the forefront of technological advancement, bringing fresh perspective and cutting-edge solutions to every project.
                 </p>
                 <p className="mt-4">
-                    Through this website, I aim to share my insights, experience, and creations with you. Whether you&apos;re a fellow developer seeking solutions,
-                    a fellow artist in search of inspiration, or simply someone who wants to know more about me, there&apos;s something here for you.
+                    My goal is to share my insights, experience, and development work to all fellow developers seeking solutions, fellow artists in search of inspiration, and all who drop by my site
+                    to check it out. I hope you find something that you can relate for work or non-work projects.
                 </p>
                 <p className="mt-4">
-                    Thank you for being here, and I can&apos;t wait to embark this adventure with you.
+                    Thank you for dropping by and I hope you follow as I work on, update, and improve this site.
                 </p>
             </div>
         </div>

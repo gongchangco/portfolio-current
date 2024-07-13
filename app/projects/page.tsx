@@ -2,7 +2,6 @@ import { Container } from "@/components/Container"
 import { Heading } from "@/components/Heading"
 import { Products } from "@/components/Products";
 import { Metadata } from "next"
-import Image from "next/image";
 
 export const metadata: Metadata = {
     title: "Projects | Grace Ongchangco",
@@ -18,7 +17,7 @@ export default function Projects() {
                 What I&apos;ve worked on:
             </Heading>
             
-            <p className="text-base font-mono mb-10">Below are the list of projects I&apos;ve worked on both work-related and non-work related.</p>
+            <p className="text-base mb-10">Below are the list of projects I&apos;ve worked on both work-related and non-work related.</p>
 
             <Products />
         </Container>

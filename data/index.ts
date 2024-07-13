@@ -14,11 +14,11 @@ export const timeline = [
         date: "04/2023 - 02/2024",
         description: "Product GUI and building internal systems",
         responsibilities: [
-            "Developed and refined automation solutions for internal applications, enhancing workflow efficiency and facilitating smooth transitions to new projects.",
-            "Utilized the PEVN (PostgreSQL, Express, Vue, Node) tech stack to construct robust web applications, including an ERP system optimized for inventory management.",
-            "Collaborate with internal stakeholders to devise and enhabce web applications aimed at improving operational efficiency",
+            "Developed and refined automation solutions for internal applications, enhancing workflow efficiency.",
+            "Utilized the PEVN tech stack to construct robust web applications.",
+            "Collaborate with internal stakeholders to devise and enhabce web applications.",
             "Led initiatives to enhance and automate existing projects using PHP and Angular.",
-            "Participated in Agile/Scrum development methodologies, collaborating with cross-functional teams"
+            "Participated in Agile/Scrum development methodologies."
         ]
     },
     {
@@ -27,10 +27,10 @@ export const timeline = [
         date: "01/2020 - 03/2023",
         description: "Build automation scripts",
         responsibilities: [
-            "Develop automation scripts to enhance work efficiency for Chief Executive Officer and warehouse workers",
-            "Develop and deploy Visual Integration (VI) jobs to seamlessly upload real-time data from Excel spreadsheets to the Sage 100 ERP system",
-            "Leverage SOAP/REST APIs to facilitate seamless communication with third-party systems",
-            "Reduce time consumption and errors when inputting information into the ERP system by applying barcode text format to scan from picking/packing sheets using Crystal Reports."
+            "Develop automation scripts to enhance work efficiency for workers.",
+            "Develop and deploy Visual Integration jobs to seamlessly upload data to the Sage 100 ERP system.",
+            "Leverage SOAP/REST APIs to facilitate seamless communication with third-party systems.",
+            "Increase efficiency into the ERP system by applying barcode text format to scan from sheets into Crystal Reports."
         ]
     },
     {
@@ -38,10 +38,10 @@ export const timeline = [
         title: "Web Develoepr and Ecommerce Manager",
         date: "08/2016 - 01/2020",
         responsibilities: [
-            "Implemented a robust content management system (CMS) using PHP (WordPress), JavaScript, and MySQL, enabling seamless content updates and maintenance for the e-commerce website.",
-            "Took ownership of product management, inventory updates, and UI/UX enhancements, utilizing custom code solutions to tailor the website to meet specific business requirements.",
-            "Revised item images and descriptions to make sure e-commerce site follows the Code of Conduct.",
-            "Collaborated with international partners to standardize product images and descriptions, ensuring consistency and compliance with company standards and industry regulations."
+            "Implement a robust CMS, enabling seamless content updates and maintenance for the e-commerce website.",
+            "Utilize custom code solutions to meet specific business requirements.",
+            "Revised item images and descriptions to make sure ecommerce site follows the Code of Conduct.",
+            "Collaborate with international partners to standardize product images and descriptions."
         ]
     }
 ]

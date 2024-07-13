@@ -2,7 +2,7 @@
 import React from "react"
 import { Heading } from "./Heading"
 import { timeline } from "@/data"
-import { IconCircleFilled } from "@tabler/icons-react"
+import { IconCircleCheckFilled } from "@tabler/icons-react"
 
 export const Experience = () => {
     return(
@@ -27,7 +27,7 @@ export const Experience = () => {
                             {item.description}
                         </p>
 
-                        {item.responsibilities.map((responsibility) => (
+                        {item.responsibilities.map((responsibility, index) => (
                             <Step key={responsibility}>{responsibility}</Step>
                         ))}
                     </div>
@@ -40,7 +40,7 @@ export const Experience = () => {
 const Step = ({ children }: { children: React.ReactNode }) => {
     return (
       <div className="flex space-x-1 items-start my-2">
-        <IconCircleFilled className="h-3 w-4 mt-1 text-neutral-300" />
+        <IconCircleCheckFilled className="h-3 w-4 mt-1 text-neutral-300" />
         <p className="text-sm md:text-sm lg:text-sm">
           {children}
         </p>

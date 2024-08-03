@@ -55,16 +55,24 @@ export const Contact = () => {
         setSubmitSuccess(true);
         setSubmitError("");
 
-        const formElement = e.target as HTMLFormElement;
-
         try {
-            const response = await fetch("/", {
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(new FormData(formElement) as any).toString(),
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key: process.env.WEB3_PUBLIC_ACCESS_KEY,
+                    name: formData.name.value,
+                    email: formData.email.value,
+                    message: formData.message.value,
+                }),
             });
 
-            if (response.ok) {
+            const result = await response.json();
+
+            if (result.success) {
                 setFormData(defaultFormState);
                 alert("Form submitted successfully!");
             } else {
@@ -87,18 +95,9 @@ export const Contact = () => {
 
             <form
                 name="contact"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
             >
-                <input type="hidden" name="form-name" value="contact" />
-                <label className="hidden">
-                    Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
-                </label>
-
                 <div className="flex flex-col md:flex-row justify-between gap-5">
-
                     <input 
                         type="text"
                         placeholder="Name"

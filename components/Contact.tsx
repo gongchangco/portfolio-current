@@ -1,25 +1,22 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 
 const defaultFormState = {
-    name: {
-        value: "",
-        error: "",
-    },
-    email: {
-        value: "",
-        error: "",
-    },
-    message: {
-        value: "",
-        error: "",
-    },
+    name: { value: "", error: "" },
+    email: { value: "", error: "" },
+    message: { value: "", error: "" },
 }
 
 export const Contact = () => {
     const [formData, setFormData] = useState(defaultFormState);
     const [submitSuccess, setSubmitSuccess] = useState(false);
     const [submitError, setSubmitError] = useState("");
+    const [accessKey, setAccessKey] = useState<string | undefined>(undefined);
+
+    useEffect(() => {
+        setAccessKey(process.env.WEB3_PUBLIC_ACCESS_KEY);
+    }, []);
 
     const validateForm = () => {
         let isValid = true;
@@ -51,6 +48,11 @@ export const Contact = () => {
         e.preventDefault();
 
         if (!validateForm()) return;
+
+        if (!accessKey) {
+            setSubmitError("Access key is missing. Please check your environment configuration.");
+            return;
+        }
 
         setSubmitSuccess(true);
         setSubmitError("");

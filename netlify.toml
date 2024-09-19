@@ -4,3 +4,9 @@
 
 [[plugins]]
     package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+    package = "netlify-plugin-git-lfs-include"
+
+[plugin.inputs]
+    include = ["/public/images/profile.jpg"]

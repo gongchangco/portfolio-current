@@ -80,7 +80,7 @@ const SidebarHeader = () => {
     return(
         <div className="flex gap-2 justify-center sm:justify-start">
             <Image
-                src="/favicon.ico"
+                src="/images/profile.jpg"
                 alt="Image"
                 height={40}
                 width={40}
